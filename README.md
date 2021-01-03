@@ -12,3 +12,16 @@
 
   
 
+### Queue (큐)
+
+> `list`: 무작위 접근에 최적화된 자료 구조이기 때문에 `pop(0)`, `insert(0,x)`의 복잡도는 O(N)이다. 
+>
+> `deque`: `popleft()`와 `appendleft(x)`메서드는 O(1)의 복잡도를 가진다. 하지만 i번째 데이터에 접근하는 복잡도는 O(N)이다. 
+>
+> `Queue`: `from queue import Queue`을 해줘야 한다.  `put(x)`, `get()` 데이터 추가/삭제는 O(1), 데이터 접근은 O(N)이다.  
+
+- 백준 18258 큐 2
+
+  list를 쓰니깐 시간초과 발생. 
+
+  
