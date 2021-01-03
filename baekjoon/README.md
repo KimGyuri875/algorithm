@@ -27,3 +27,8 @@
 > `list`  or `deque`
 >
 - 백준 10826 스택
+
+
+### Linked List
+
+- 백준 1021 회전하는 큐 https://www.acmicpc.net/problem/1021
