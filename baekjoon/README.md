@@ -22,10 +22,8 @@
   list를 쓰니깐 시간초과 발생. -> deque 와, sys.stdin.readline() 을 사용한다. 
     
   
-  ### Stack (스택)
+### Stack (스택)
 
 > `list`  or `deque`
 >
 > - 백준 10826 스택
-
-  
