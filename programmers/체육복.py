@@ -35,3 +35,4 @@ def solution(n, lost, reserve):
             _lost.remove(b)
     return n - len(_lost)
 '''
+# set을 이용하면 중복을 제거할 수 있다. 이 문제에서 적용하기는 어려워보인다
