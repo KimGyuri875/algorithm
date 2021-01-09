@@ -9,11 +9,12 @@ def solution(phone_book):
     return answer
 
 
-""'
+"""
 def solution(phoneBook):
     phoneBook = sorted(phoneBook)                                   # 원본은 유지하고 새로운 list을 주는 b = sorted(a)
                                                                     # 원본을 정렬하는 a.sort(), return 은 None
     for p1, p2 in zip(phoneBook, phoneBook[1:]):
-        if p2.startswith(p1):
+        if p2.startswith(p1):                                       # print(strB.startswith('bcd', 1)) 처럼 인덱스로 비교 시점을 설정할 수 있다.
             return False
     return True
+"""
