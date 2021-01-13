@@ -32,6 +32,7 @@ if check == False:
     
     
 """
+#시간 초과
 import sys
 from collections import deque
 N, M, K, X = map(int, sys.stdin.readline().split())
