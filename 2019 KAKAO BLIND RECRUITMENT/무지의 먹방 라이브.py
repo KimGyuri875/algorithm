@@ -8,6 +8,10 @@ def solution(food_times, k):
     answer = []
     key = 0
 
+    # 전체 음식을 먹는 시간보다 k가 크거나 같다면 -1
+    if sum(food_times) <= k:
+        return -1
+    
     q = PriorityQueue()
     for i in range(len(food_times)):
         q.put((food_times[i], i+1))
