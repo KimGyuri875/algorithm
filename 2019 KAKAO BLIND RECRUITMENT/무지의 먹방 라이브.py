@@ -11,12 +11,14 @@ def solution(food_times, k):
     q = PriorityQueue()
     for i in range(len(food_times)):
         q.put((food_times[i], i+1))
+        
     # 가장 작은 수가 맨 앞으로 간 결과를 확인 할 수 있다. 정렬은 아니다. 
     #print(q.queue)
 
     sum_value = 0
     previous = 0 
     length = len(food_times)
+    
     # 미리 확인을 하는 방법으로, 만약 이 결과로 k의 범위를 넘어설 경우를 막는다.
     while sum_value + ((q.queue[0][0] - previous) * length) <= k:
         now = q.get()[0]
@@ -25,6 +27,7 @@ def solution(food_times, k):
         previous = now
     
     answer = sorted(q.queue, key = lambda x : x[1])
+    
     # 굉장히 인상깊은 방법으로, k의 범위를 넘어서지 않도록 sum_value를 설계했기 때문에 
     #나머지가 출력되는 % 연산자를 이용해서 다음으로 먹어야 할 음식을 출력할 수 있다. 
     return answer[(k - sum_value) % len(q.queue)][1]
