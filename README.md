@@ -82,3 +82,7 @@ data = sys.stdin.readline().rstrip()
 
 - math : 필수적인 수학적 기능을 제공하는 라이브러리이다.
 
+### 특정 문자열 제거 -> name.replace('없애려는 문자', '이걸로 대체하기')
+  ```python
+  name = name.replace('\t', '').replace('\n', '')
+  ```
